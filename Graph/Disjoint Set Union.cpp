@@ -6,12 +6,12 @@ using namespace std;
 const int N=1e5+123;
 
 int parent[N];
-int size[N];
+int Size[N];
 
 void make(int v)
 {
   parent[v]=v;
-  size[v]=1;
+  Size[v]=1;
 }
 int find(int v)
 {
@@ -26,10 +26,10 @@ void Union(int a,int b)
    b=find(b);
    if(a!=b){
      // Union by size
-      if(size[a]<size[b])
+      if(Size[a]<Size[b])
         swap(a,b);
       parent[b]=a;
-      size[a]+=size[b];
+      Size[a]+=Size[b];
    }
 }
 int main()
