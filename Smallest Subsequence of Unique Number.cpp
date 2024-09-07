@@ -1,6 +1,7 @@
 //In the name of Almighty Allah
 //Smallest Subsequence of Unique Number in array;
 // Maximum length Subsequence With Only Unique Element
+// TC-> O(n(log2(n))
 
 #include<bits/stdc++.h>
 using namespace std;
